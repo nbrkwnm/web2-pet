@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Pet.Domain.Interfaces;
 using Pet.Domain.Models;
 using System.Collections.Generic;
 

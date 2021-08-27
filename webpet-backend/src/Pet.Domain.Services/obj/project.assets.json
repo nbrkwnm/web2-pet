@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain.Services\\Pet.Domain.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Services\\Pet.Domain.Services.csproj",
       "projectName": "Pet.Domain.Services",
-      "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain.Services\\Pet.Domain.Services.csproj",
+      "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Services\\Pet.Domain.Services.csproj",
       "packagesPath": "C:\\Users\\Murilo Kawanami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain.Services\\obj\\",
+      "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Murilo Kawanami\\AppData\\Roaming\\NuGet\\NuGet.Config",

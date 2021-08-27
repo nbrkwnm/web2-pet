@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {}
+    "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {
+    "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj",
         "projectName": "Pet.Domain",
-        "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj",
+        "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj",
         "packagesPath": "C:\\Users\\Murilo Kawanami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Murilo Kawanami\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -740,11 +740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Application\\Pet.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Application\\Pet.Application.csproj",
       "projectName": "Pet.Application",
-      "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Application\\Pet.Application.csproj",
+      "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Application\\Pet.Application.csproj",
       "packagesPath": "C:\\Users\\Murilo Kawanami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Application\\obj\\",
+      "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Murilo Kawanami\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -761,11 +761,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {
-              "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj"
+            "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {
+              "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj"
             },
-            "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Infra\\Pet.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet-backend\\src\\Pet.Infra\\Pet.Infrastructure.csproj"
+            "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Infra\\Pet.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Infra\\Pet.Infrastructure.csproj"
             }
           }
         }
