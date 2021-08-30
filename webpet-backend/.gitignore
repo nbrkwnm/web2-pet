@@ -1,0 +1,16 @@
+.vs
+.idea
+/src/.vs
+/src/.idea
+/src/Pet.API/bin
+/src/Pet.API/obj
+/src/Pet.Application/bin
+/src/Pet.Application/obj
+/src/Pet.Domain/bin
+/src/Pet.Domain/obj
+/src/Pet.Domain.Core/bin
+/src/Pet.Domain.Core/obj
+/src/Pet.Domain.Services/bin
+/src/Pet.Domain.Services/obj
+/src/Pet.Infra/bin
+/src/Pet.Infra/obj
