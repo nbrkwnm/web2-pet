@@ -5,13 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Pet.Domain.Core\Pet.Domain.Core.csproj" />
     <ProjectReference Include="..\Pet.Domain\Pet.Domain.csproj" />
-    <ProjectReference Include="..\Pet.Infra\Pet.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
-    <Folder Include="Interfaces\" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mappers\Interfaces\**" />
+    <Compile Remove="Mappers\IUserMapper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Mappers\Interfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Mappers\Interfaces\**" />
   </ItemGroup>
 
 </Project>

@@ -27,7 +27,7 @@ namespace Pet.Infrastructure.Data.Repositories
             }
         }
 
-        void IBaseRepository<TEntity>.Delete(TEntity entity)
+        void IBaseRepository<TEntity>.Remove(TEntity entity)
         {
             try
             {

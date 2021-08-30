@@ -4,6 +4,64 @@
     "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Services\\Pet.Domain.Services.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\Pet.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\Pet.Domain.Core.csproj",
+        "projectName": "Pet.Domain.Core",
+        "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\Pet.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\Murilo Kawanami\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Murilo Kawanami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {
+                "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Services\\Pet.Domain.Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,6 +70,64 @@
         "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Services\\Pet.Domain.Services.csproj",
         "packagesPath": "C:\\Users\\Murilo Kawanami\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Murilo Kawanami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\Pet.Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\Pet.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj",
+        "projectName": "Pet.Domain",
+        "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\Pet.Domain.csproj",
+        "packagesPath": "C:\\Users\\Murilo Kawanami\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Murilo Kawanami\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +170,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

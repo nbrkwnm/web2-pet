@@ -1,0 +1,15 @@
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\bin\Debug\netcoreapp3.1\Pet.Domain.Services.deps.json
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\bin\Debug\netcoreapp3.1\Pet.Domain.Services.dll
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\bin\Debug\netcoreapp3.1\Pet.Domain.Services.pdb
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\bin\Debug\netcoreapp3.1\Pet.Domain.Core.dll
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\bin\Debug\netcoreapp3.1\Pet.Domain.dll
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\bin\Debug\netcoreapp3.1\Pet.Domain.Core.pdb
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\bin\Debug\netcoreapp3.1\Pet.Domain.pdb
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.csproj.AssemblyReference.cache
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.AssemblyInfoInputs.cache
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.AssemblyInfo.cs
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.csproj.CopyComplete
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.dll
+C:\Users\Murilo Kawanami\Projects\webpet\webpet-backend\src\Pet.Domain.Services\obj\Debug\netcoreapp3.1\Pet.Domain.Services.pdb

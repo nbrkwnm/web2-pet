@@ -5,20 +5,37 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.8">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.7" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Pet.Application\Pet.Application.csproj" />
     <ProjectReference Include="..\Pet.Domain.Core\Pet.Domain.Core.csproj" />
+    <ProjectReference Include="..\Pet.Domain.Services\Pet.Domain.Services.csproj" />
     <ProjectReference Include="..\Pet.Domain\Pet.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CrossCutting\" />
+    <Folder Include="CrossCutting\IOC\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="CrossCutting\Interfaces\**" />
+    <Compile Remove="CrossCutting\Mapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="CrossCutting\Interfaces\**" />
+    <EmbeddedResource Remove="CrossCutting\Mapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CrossCutting\Interfaces\**" />
+    <None Remove="CrossCutting\Mapper\**" />
   </ItemGroup>
 
 </Project>

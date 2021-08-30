@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Pet.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Pet.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pet.Domain.dll": {}
+        }
+      },
+      "Pet.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Pet.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pet.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pet.Domain.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Pet.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Pet.Domain/Pet.Domain.csproj",
+      "msbuildProject": "../Pet.Domain/Pet.Domain.csproj"
+    },
+    "Pet.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Pet.Domain.Core/Pet.Domain.Core.csproj",
+      "msbuildProject": "../Pet.Domain.Core/Pet.Domain.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Pet.Domain.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Murilo Kawanami\\.nuget\\packages\\": {}
@@ -33,7 +70,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\Pet.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\Murilo Kawanami\\Projects\\webpet\\webpet-backend\\src\\Pet.Domain.Core\\Pet.Domain.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -60,7 +101,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
