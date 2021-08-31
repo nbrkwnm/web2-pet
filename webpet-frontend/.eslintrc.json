@@ -29,16 +29,22 @@
                     ".jsx"
                 ]
             }
-        ]
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 100
+            }
+        ],
+        "react/destructuring-assignment": "off",
+        "import/no-unresolved": "off"
     },
     "settings": {
         "import/resolver": {
             "node": {
                 "extensions": [
                     ".js",
-                    ".jsx",
-                    ".ts",
-                    ".tsx"
+                    ".jsx"
                 ]
             }
         }
