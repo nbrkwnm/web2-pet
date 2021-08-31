@@ -7,6 +7,6 @@ namespace Pet.Application.Dtos
         public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public Person Person { get; set; }
+        public PersonDto Person { get; set; }
     }
 }

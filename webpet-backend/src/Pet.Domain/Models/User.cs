@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pet.Domain.Models
 {
@@ -8,6 +9,7 @@ namespace Pet.Domain.Models
         public string Password { get; set; }
         [ForeignKey(nameof(Id))]
         public Person Person { get; set; }
+        public IList<Permission> Permissions { get; set; }
 
         public User()
         { }

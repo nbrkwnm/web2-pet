@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Pet.Domain.Models
 {
-    class Permission
+    public class Permission : BaseEntity
     {
+        public string Role { get; set; }
     }
 }

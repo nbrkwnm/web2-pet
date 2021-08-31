@@ -1,8 +1,10 @@
 ﻿using Autofac;
+using AutoMapper;
 using Pet.Application;
+using Pet.Application.Dtos;
 using Pet.Application.Interfaces;
-using Pet.Application.Interfaces.Mappers;
 using Pet.Application.Mappers;
+using Pet.Application.Mappers.User;
 using Pet.Domain.Core.Interfaces.Repositories;
 using Pet.Domain.Core.Interfaces.Services;
 using Pet.Domain.Services;
@@ -19,7 +21,16 @@ namespace Pet.Infrastructure.CrossCutting.IOC
             builder.RegisterType<UserApplicationService>().As<IUserApplicationService>();
             builder.RegisterType<UserService>().As<IUserService>();
             builder.RegisterType<UserRepository>().As<IUserRepository>();
-            builder.RegisterType<UserMapper>().As<IUserMapper>();
+
+            builder.Register(ctx => new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new DtoToModelUserMapping());
+                cfg.AddProfile(new ModelToDtoUserMapping());
+            }));
+
+            builder.Register(ctx => ctx.Resolve<MapperConfiguration>().CreateMapper()).As<IMapper>()
+                .InstancePerLifetimeScope();
+
             #endregion
         }
     }

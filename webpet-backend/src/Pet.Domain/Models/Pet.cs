@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pet.Domain.Models
 {
-    class Pet
+    public class Pet : BaseAuditEntity
     {
     }
 }

@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Pet.Domain.Enum;
 
 namespace Pet.Domain.Models
 {
-    class Document
+    public class Document : BaseAuditEntity
     {
+        public DocumentType Type { get; set; }
+        public string Number { get; set; }
     }
 }
