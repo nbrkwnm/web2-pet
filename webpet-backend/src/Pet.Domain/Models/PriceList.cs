@@ -4,7 +4,14 @@ using System.Text;
 
 namespace Pet.Domain.Models
 {
-    class PriceList
+    public class PriceList : BaseAuditEntity
     {
+        public string Description { get; set; }
+        public IList<PriceListItem> Items { get; set; }
+
+        public PriceList()
+        {
+            Items = new List<PriceListItem>();
+        }
     }
 }

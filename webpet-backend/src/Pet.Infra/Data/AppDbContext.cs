@@ -16,6 +16,8 @@ namespace Pet.Infrastructure.Data
         public DbSet<Person> Persons { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Document> Documents { get; set; }
+        public DbSet<Animal> Animals { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         public override int SaveChanges()
         {

@@ -24,10 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CrossCutting\IOC\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="CrossCutting\Interfaces\**" />
     <Compile Remove="CrossCutting\Mapper\**" />
   </ItemGroup>
@@ -40,6 +36,10 @@
   <ItemGroup>
     <None Remove="CrossCutting\Interfaces\**" />
     <None Remove="CrossCutting\Mapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations" />
   </ItemGroup>
 
 </Project>

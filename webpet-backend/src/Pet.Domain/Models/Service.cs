@@ -4,7 +4,12 @@ using System.Text;
 
 namespace Pet.Domain.Models
 {
-    class Service
+    public class Service : BaseAuditEntity
     {
+        public string Description { get; set; }
+        public TimeSpan ExecutionTime { get; set; }
+        
+        public Service()
+        { }
     }
 }

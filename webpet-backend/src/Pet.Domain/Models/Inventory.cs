@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Pet.Domain.Enum;
 
 namespace Pet.Domain.Models
 {
-    class Inventory
+    public class Inventory : BaseAuditEntity
     {
+        public IList<Product> Products { get; set; }
+        public InventoryStatusType Status { get; set; }
+
+        public Inventory()
+        { }
     }
 }

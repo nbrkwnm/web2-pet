@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Pet.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Pet.Domain.Core.Interfaces.Repositories;
 
 namespace Pet.Infrastructure.Data.Repositories
 {

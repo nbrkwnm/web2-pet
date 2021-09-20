@@ -6,18 +6,17 @@ using Pet.Domain.Models;
 
 namespace Pet.API.Controllers
 {
-    [Route("user/")]
+    [Route("animal/")]
     [ApiController]
-    public class UsersController : Controller
+    public class AnimalsController : Controller
     {
-        private readonly IUserApplicationService _applicationService;
+        private readonly IAnimalApplicationService _applicationService;
 
-        public UsersController(IUserApplicationService applicationService)
+        public AnimalsController(IAnimalApplicationService applicationService)
         {
             _applicationService = applicationService;
         }
         
-        // GET
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -31,15 +30,15 @@ namespace Pet.API.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post([FromBody] User user)
+        public ActionResult Post([FromBody] Animal animal)
         {
             try
             {
-                if (user == null)
+                if (animal == null)
                     return NotFound();
                 
-                _applicationService.Add(user);
-                return Ok("Usuário cadastrado com sucesso!");
+                _applicationService.Add(animal);
+                return Ok("Animal cadastrado com sucesso!");
                 
             }
             catch (Exception e)
@@ -50,15 +49,15 @@ namespace Pet.API.Controllers
         }
 
         [HttpPut]
-        public ActionResult Put([FromBody] User user)
+        public ActionResult Put([FromBody] Animal animal)
         {
             try
             {
-                if (user == null)
+                if (animal == null)
                     return NotFound();
                 
-                _applicationService.Update(user);
-                return Ok("Usuário atualizado com sucesso!");
+                _applicationService.Update(animal);
+                return Ok("Animal atualizado com sucesso!");
             }
             catch (Exception e)
             {
@@ -68,15 +67,15 @@ namespace Pet.API.Controllers
         }
 
         [HttpDelete()]
-        public ActionResult Delete([FromBody] User user)
+        public ActionResult Delete([FromBody] Animal animal)
         {
             try
             {
-                if (user == null)
+                if (animal == null)
                     return NotFound();
                 
-                _applicationService.Remove(user);
-                return Ok("Usuário removido com sucesso");
+                _applicationService.Remove(animal);
+                return Ok("Animal removido com sucesso");
             }
             catch (Exception e)
             {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Pet.Domain.Interfaces
+namespace Pet.Domain.Core.Interfaces.Repositories
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {

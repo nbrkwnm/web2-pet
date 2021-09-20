@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Pet.Domain.Models
 {
-    class Product
+    public class Product : BaseAuditEntity
     {
+        public string Name { get; set; }
+        public string BarCode { get; set; }
+        public decimal UnitCost { get; set; }
+
+        public Product()
+        { }
     }
 }

@@ -1,24 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pet.Domain.Models
 {
-    public class User : BaseAuditEntity
+    public class User : Person
     {
         public string Username { get; set; }
         public string Password { get; set; }
-        [ForeignKey(nameof(Id))]
-        public Person Person { get; set; }
-        public IList<Permission> Permissions { get; set; }
 
         public User()
         { }
-        public User(string username, string password)
+        
+        public User(string name, string username, string password, string email, DateTime birthDate, IList<Document> documents)
+            : this()
         {
+            Name = name;
             Username = username;
             Password = password;
+            Email = email;
+            BirthDate = birthDate;
+            Documents = documents;
         }
-
-        
     }
 }

@@ -2,6 +2,6 @@
 
 namespace Pet.Domain.Core.Interfaces.Repositories
 {
-    public interface IUserRepository : IBaseRepository<User>
+    public interface IPetRepository : IBaseRepository<Animal>
     { }
 }

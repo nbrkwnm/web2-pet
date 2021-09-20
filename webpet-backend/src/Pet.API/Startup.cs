@@ -1,19 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Autofac;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Pet.Infrastructure.CrossCutting.IOC;
 using Pet.Infrastructure.Data;
 
 namespace Pet.API
@@ -39,11 +31,6 @@ namespace Pet.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo{ Title = "API Pet", Version = "v1"});
             });
-        }
-
-        public void ConfigureContainer(ContainerBuilder builder)
-        {
-            builder.RegisterModule(new ModuleIOC());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

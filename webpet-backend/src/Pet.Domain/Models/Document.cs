@@ -9,5 +9,14 @@ namespace Pet.Domain.Models
     {
         public DocumentType Type { get; set; }
         public string Number { get; set; }
+
+        public Document()
+        { }
+
+        public Document(DocumentType type, string number)
+        {
+            Type = type;
+            Number = number;
+        }
     }
 }

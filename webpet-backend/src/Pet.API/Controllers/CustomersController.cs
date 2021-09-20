@@ -6,18 +6,17 @@ using Pet.Domain.Models;
 
 namespace Pet.API.Controllers
 {
-    [Route("user/")]
+    [Route("customer/")]
     [ApiController]
-    public class UsersController : Controller
+    public class CustomersController : Controller
     {
-        private readonly IUserApplicationService _applicationService;
+        private readonly ICustomerApplicationService _applicationService;
 
-        public UsersController(IUserApplicationService applicationService)
+        public CustomersController(ICustomerApplicationService applicationService)
         {
             _applicationService = applicationService;
         }
         
-        // GET
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -31,16 +30,15 @@ namespace Pet.API.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post([FromBody] User user)
+        public ActionResult Post([FromBody] Customer customer)
         {
             try
             {
-                if (user == null)
+                if (customer == null)
                     return NotFound();
                 
-                _applicationService.Add(user);
+                _applicationService.Add(customer);
                 return Ok("Usuário cadastrado com sucesso!");
-                
             }
             catch (Exception e)
             {
@@ -50,14 +48,14 @@ namespace Pet.API.Controllers
         }
 
         [HttpPut]
-        public ActionResult Put([FromBody] User user)
+        public ActionResult Put([FromBody] Customer customer)
         {
             try
             {
-                if (user == null)
+                if (customer == null)
                     return NotFound();
                 
-                _applicationService.Update(user);
+                _applicationService.Update(customer);
                 return Ok("Usuário atualizado com sucesso!");
             }
             catch (Exception e)
@@ -68,14 +66,14 @@ namespace Pet.API.Controllers
         }
 
         [HttpDelete()]
-        public ActionResult Delete([FromBody] User user)
+        public ActionResult Delete([FromBody] Customer customer)
         {
             try
             {
-                if (user == null)
+                if (customer == null)
                     return NotFound();
                 
-                _applicationService.Remove(user);
+                _applicationService.Remove(customer);
                 return Ok("Usuário removido com sucesso");
             }
             catch (Exception e)
