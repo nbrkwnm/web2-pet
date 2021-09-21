@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Pet.Application.Interfaces;
 using Pet.Domain.Core.Interfaces.Repositories;
 using Pet.Domain.Models;
@@ -37,6 +38,11 @@ namespace Pet.Application.Services
         public void Remove(User user)
         {
             _repository.Remove(user);
+        }
+
+        public IEnumerable<User> GetByName(string name)
+        {
+            return GetAll().Where(c => c.Name.Contains(name));
         }
     }
 }

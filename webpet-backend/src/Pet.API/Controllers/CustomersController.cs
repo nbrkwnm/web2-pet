@@ -18,13 +18,13 @@ namespace Pet.API.Controllers
         }
         
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Customer>> Get()
         {
             return Ok(_applicationService.GetAll());
         }
 
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Customer> Get(int id)
         {
             return Ok(_applicationService.GetById(id));
         }

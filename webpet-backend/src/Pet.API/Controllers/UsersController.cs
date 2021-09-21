@@ -19,15 +19,21 @@ namespace Pet.API.Controllers
         
         // GET
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<User>> Get()
         {
             return Ok(_applicationService.GetAll());
         }
 
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<User> Get(int id)
         {
             return Ok(_applicationService.GetById(id));
+        }
+
+        [HttpGet("{name}")]
+        public ActionResult<IEnumerable<User>> GetByName(string name)
+        {
+            return Ok(_applicationService.GetByName(name));
         }
 
         [HttpPost]
