@@ -4,9 +4,8 @@ function Inputfield(props) {
   return (
     <>
       <label htmlFor={props.name}>
-        {props.name}
-        :
-        {' '}
+        {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+        {props.name}:{' '}
       </label>
       <input type={props.type} name={props.name} />
       <br />
