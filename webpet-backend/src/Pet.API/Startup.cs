@@ -35,7 +35,12 @@ namespace Pet.API
 
             services.AddDbContext<AppDbContext>(options => options.UseNpgsql(connection));
             services.AddControllers();
-            services.AddCors();
+            services.AddCors(options => { options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyHeader();
+                    builder.AllowAnyMethod();
+                } ); });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             IoC(services);
             services.AddSwaggerGen(c =>
@@ -100,11 +105,7 @@ namespace Pet.API
 
             app.UseRouting();
             
-            app.UseCors(option => option
-                .AllowAnyOrigin()
-                .AllowAnyHeader()
-                .AllowAnyMethod()
-                .SetIsOriginAllowed(origin => true));
+            app.UseCors();
 
             app.UseAuthorization();
 
