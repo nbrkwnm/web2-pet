@@ -3,14 +3,10 @@ import Inputfield from '../../Components/inputfield';
 import SubmitField from '../../Components/submitfield';
 import API from '../../api/base';
 
-function Home() {
+function Ambient() {
   let form = {
     name: '',
     email: '',
-    birthDate: '',
-    documents: [''],
-    username: '',
-    password: '',
   };
 
   async function handleOnSubmit(data) {
@@ -18,13 +14,9 @@ function Home() {
       form = {
         name: data.Name.value,
         email: data.Email.value,
-        birthDate: data.Birthdate.value,
-        documents: [data.documento.value],
-        username: data.Username.value,
-        password: data.Password.value,
       };
     }
-    const response = await API.post('/user', form);
+    const response = await API.post('/ambient', form);
   }
 
   function stopDefAction(evt) {
@@ -42,14 +34,10 @@ function Home() {
         <h1 className="form-title">Cadastro de cliente</h1>
         <Inputfield name="Name" type="text" />
         <Inputfield name="Email" type="email" />
-        <Inputfield name="Birthdate" type="data" />
-        <Inputfield name="documento" type="number" />
-        <Inputfield name="Username" type="text" />
-        <Inputfield name="Password" type="password" />
-        <SubmitField name="Logar" />
+        <SubmitField name="Confirmar" />
       </form>
     </div>
   );
 }
 
-export default Home;
+export default Ambient;

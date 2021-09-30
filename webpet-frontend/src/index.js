@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import Home from './Pages/Home/home';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'antd/dist/antd.css';
+import Routers from './Router/router_config';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Routers />
   </React.StrictMode>,
   document.getElementById('root'),
 );
