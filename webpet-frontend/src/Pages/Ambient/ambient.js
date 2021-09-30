@@ -13,7 +13,7 @@ function Ambient() {
     if (typeof data !== 'undefined') {
       form = {
         description: data.Description.value,
-        isOccupied: data.IsOccupied.value,
+        isOccupied: data.IsOccupied.checked,
       };
     }
     const response = await API.post('/ambient', form);

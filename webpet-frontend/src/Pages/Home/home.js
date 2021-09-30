@@ -18,6 +18,10 @@ export default function Home() {
       nome: 'Ambiente',
       rota: 'ambient',
     },
+    {
+      nome: 'Linceça',
+      rota: 'license',
+    },
   ];
 
   function renderPages(page) {
