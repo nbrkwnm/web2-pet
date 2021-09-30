@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import User from '../Pages/User/user';
 import Costumer from '../Pages/Costumer/costumer';
 import Ambient from '../Pages/Ambient/ambient';
+import Home from '../Pages/Home/home';
 
 // eslint-disable-next-line import/prefer-default-export
 export default function Routers() {
@@ -10,7 +11,7 @@ export default function Routers() {
     <Router>
       <>
         <Route exact path="/">
-          <User />
+          <Home />
         </Route>
         <Route exact path="/ambient">
           <Ambient />

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Inputfield from '../../Components/inputfield';
-import SubmitField from '../../Components/submitfield';
+import Submitfield from '../../Components/submitfield';
 import API from '../../api/base';
 
 function Costumer() {
@@ -46,7 +46,7 @@ function Costumer() {
         <Inputfield name="documento" type="number" />
         <Inputfield name="Username" type="text" />
         <Inputfield name="Password" type="password" />
-        <SubmitField name="Logar" />
+        <Submitfield name="Logar" />
       </form>
     </div>
   );

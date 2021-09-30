@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SubmitField(props) {
+function Submitfield(props) {
   return (
     <>
       <button className="btn btn-primary" type="submit">
@@ -10,4 +10,4 @@ function SubmitField(props) {
   );
 }
 
-export default SubmitField;
+export default Submitfield;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Inputfield from '../../Components/inputfield';
-import SubmitField from '../../Components/submitfield';
+import Submitfield from '../../Components/submitfield';
 import API from '../../api/base';
 
 function User() {
@@ -24,7 +24,7 @@ function User() {
         password: data.Password.value,
       };
     }
-    // const response = await API.post('/user', form);
+    const response = await API.post('/user', form);
   }
 
   function stopDefAction(evt) {
@@ -35,7 +35,6 @@ function User() {
   useEffect(() => {
     handleOnSubmit();
   }, []);
-  // document.getElementsByName('Logar').preventDefault();
   return (
     <div className="mb-3">
       <form onSubmit={stopDefAction}>
@@ -46,7 +45,7 @@ function User() {
         <Inputfield name="documento" type="number" />
         <Inputfield name="Username" type="text" />
         <Inputfield name="Password" type="password" />
-        <SubmitField name="Logar" />
+        <Submitfield name="Logar" />
       </form>
     </div>
   );
