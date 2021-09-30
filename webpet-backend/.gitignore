@@ -14,3 +14,4 @@
 /src/Pet.Domain.Services/obj
 /src/Pet.Infra/bin
 /src/Pet.Infra/obj
+.config
