@@ -4,8 +4,8 @@ namespace Pet.Domain.Enum
 {
     public enum DocumentType
     {
-        Rg,
-        Cpf,
-        Cnpj
+        Rg = 0,
+        Cpf = 1,
+        Cnpj = 2
     }
 }

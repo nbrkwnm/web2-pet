@@ -7,6 +7,7 @@ namespace Pet.Domain.Models
 {
     public class Payment : BaseEntity
     {
+        public int Id { get; set; }
         public PaymentType Type { get; set; }
         public decimal Value { get; set; }
         public PaymentSituationType Situation { get; set; }

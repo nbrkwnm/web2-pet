@@ -2,8 +2,8 @@
 {
     public enum OrderStatusType
     {
-        Opened,
-        Done,
-        Cancelled
+        Opened = 0,
+        Done = 1,
+        Cancelled = 2
     }
 }

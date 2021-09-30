@@ -2,16 +2,25 @@
 {
     public class OrderItem : BaseEntity
     {
-        public Product Product { get; set; }
-        public Service Service { get; set; }
-        public PriceList PriceList { get; set; }
+        public int Id { get; set; }
+        public int ProductId { get; set; }
+        public virtual Product Product { get; set; }
+        public int ServideId { get; set; }
+        public virtual Service Service { get; set; }
+        public int PriceListId { get; set; }
+        public virtual PriceList PriceList { get; set; }
         public decimal Quantity { get; set; }
         public decimal SoldPrice { get; set; }
-        
-        public OrderItem(Product product, PriceList priceList, decimal quantity, decimal soldPrice)
+        public int OrderId { get; set; }
+        public virtual Order Order { get; set; }
+
+        public OrderItem()
         { }
 
-        public OrderItem(Service service, PriceList priceList, decimal quantity, decimal soldPrice)
-        { }
+        // public OrderItem(Product product, PriceList priceList, decimal quantity, decimal soldPrice)
+        // { }
+
+        // public OrderItem(Service service, PriceList priceList, decimal quantity, decimal soldPrice)
+        // { }
     }
 }

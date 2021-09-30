@@ -2,7 +2,7 @@
 {
     public enum CashRegisterEventType
     {
-        Opening,
-        Closing
+        Opening = 0,
+        Closing = 1
     }
 }

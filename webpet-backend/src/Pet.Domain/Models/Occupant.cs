@@ -2,7 +2,9 @@
 {
     public class Occupant : BaseEntity
     {
-        public Animal Animal { get; set; }
+        public int Id { get; set; }
+        public int AnimalId { get; set; }
+        public virtual Animal Animal { get; set; }
 
         public Occupant()
         { }

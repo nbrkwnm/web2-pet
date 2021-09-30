@@ -7,6 +7,7 @@ namespace Pet.Domain.Models
 {
     public class Inventory : BaseAuditEntity
     {
+        public int Id { get; set; }
         public IList<Product> Products { get; set; }
         public InventoryStatusType Status { get; set; }
 

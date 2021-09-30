@@ -2,8 +2,8 @@
 {
     public enum PaymentSituationType
     {
-        Paid,
-        Unpaid,
-        Cancelled
+        Paid = 0,
+        Unpaid = 1,
+        Cancelled = 2
     }
 }

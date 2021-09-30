@@ -2,8 +2,8 @@
 {
     public enum HospitalizationStatusType
     {
-        Hospitalized,
-        HospitalDischarge,
-        Deceased
+        Hospitalized = 0,
+        HospitalDischarge = 1,
+        Deceased = 2
     }
 }

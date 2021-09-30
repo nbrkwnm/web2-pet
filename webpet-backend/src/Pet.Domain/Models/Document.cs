@@ -7,8 +7,11 @@ namespace Pet.Domain.Models
 {
     public class Document : BaseAuditEntity
     {
+        public int Id { get; set; }
         public DocumentType Type { get; set; }
         public string Number { get; set; }
+        public int PersonId { get; set; }
+        public virtual Person Person { get; set; }
 
         public Document()
         { }

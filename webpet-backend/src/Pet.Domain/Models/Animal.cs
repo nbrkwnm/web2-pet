@@ -5,9 +5,14 @@ namespace Pet.Domain.Models
 {
     public class Animal : BaseAuditEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
+
         public PetType Type { get; set; }
         public DateTime BirthDate { get; set; }
+
+        public int CustomerId { get; set; }
+        public virtual Customer Customer { get; set; }
 
         public Animal()
         { }
