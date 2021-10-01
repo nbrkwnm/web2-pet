@@ -1,12 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import User from '../Pages/User/user';
-import Costumer from '../Pages/Costumer/costumer';
 import Ambient from '../Pages/Ambient/ambient';
+import AmbientList from '../Pages/Ambient/ambientList';
 import Home from '../Pages/Home/home';
 import License from '../Pages/License/license';
 
-// eslint-disable-next-line import/prefer-default-export
 export default function Routers() {
   return (
     <Router>
@@ -22,6 +21,9 @@ export default function Routers() {
         </Route>
         <Route exact path="/license">
           <License />
+        </Route>
+        <Route exact path="/ambient_list">
+          <AmbientList />
         </Route>
       </>
     </Router>

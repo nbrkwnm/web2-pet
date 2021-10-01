@@ -4,35 +4,32 @@ import Submitfield from '../../Components/submitfield';
 import API from '../../api/base';
 
 function Ambient() {
-  let form = {
-    description: '',
-    isOccupied: '',
-  };
-
   async function handleOnSubmit(data) {
+    let form = {
+      description: '',
+      isOccupied: '',
+    };
     if (typeof data !== 'undefined') {
       form = {
         description: data.Description.value,
-        isOccupied: data.IsOccupied.checked,
+        isOccupied: data.Ocupado.checked,
       };
     }
-    const response = await API.post('/ambient', form);
+    if (form) {
+      const response = await API.post('/ambient', form);
+    }
   }
 
   function stopDefAction(evt) {
     evt.preventDefault();
-    handleOnSubmit();
+    handleOnSubmit(evt.target);
   }
-
-  useEffect(() => {
-    handleOnSubmit();
-  }, []);
   return (
     <div className="mb-3">
       <form onSubmit={stopDefAction}>
         <h1 className="form-title">Cadastro de Ambiente</h1>
         <Inputfield name="Description" type="text" />
-        <Inputfield name="Ocupado ?" type="checkbox" />
+        <Inputfield name="Ocupado" type="checkbox" />
         <Submitfield name="Confirmar" />
       </form>
     </div>

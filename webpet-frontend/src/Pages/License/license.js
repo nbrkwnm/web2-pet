@@ -18,18 +18,13 @@ export default function License() {
         numberOrders: data.numberOrders.value,
       };
     }
-    const response = await API.post('/user', form);
+    const response = await API.post('/license', form);
   }
 
   function stopDefAction(evt) {
     evt.preventDefault();
-    handleOnSubmit();
+    handleOnSubmit(evt.target);
   }
-
-  useEffect(() => {
-    handleOnSubmit();
-  }, []);
-  // document.getElementsByName('Logar').preventDefault();
   return (
     <div className="mb-3">
       <form onSubmit={stopDefAction}>

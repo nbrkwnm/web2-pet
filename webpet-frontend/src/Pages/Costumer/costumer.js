@@ -35,7 +35,6 @@ function Costumer() {
   useEffect(() => {
     handleOnSubmit();
   }, []);
-  // document.getElementsByName('Logar').preventDefault();
   return (
     <div className="mb-3">
       <form onSubmit={stopDefAction}>

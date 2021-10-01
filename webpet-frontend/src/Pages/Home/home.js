@@ -11,12 +11,16 @@ export default function Home() {
 
   const pages = [
     {
-      nome: 'Usuario',
+      nome: 'Cliente',
       rota: 'user',
     },
     {
       nome: 'Ambiente',
       rota: 'ambient',
+    },
+    {
+      nome: 'Ver ambientes',
+      rota: 'ambient_list',
     },
     {
       nome: 'Linceça',

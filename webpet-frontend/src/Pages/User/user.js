@@ -29,19 +29,15 @@ function User() {
 
   function stopDefAction(evt) {
     evt.preventDefault();
-    handleOnSubmit();
+    handleOnSubmit(evt.target);
   }
-
-  useEffect(() => {
-    handleOnSubmit();
-  }, []);
   return (
     <div className="mb-3">
       <form onSubmit={stopDefAction}>
         <h1 className="form-title">Cadastro de cliente</h1>
         <Inputfield name="Name" type="text" />
         <Inputfield name="Email" type="email" />
-        <Inputfield name="Birthdate" type="data" />
+        <Inputfield name="Birthdate" type="date" />
         <Inputfield name="documento" type="number" />
         <Inputfield name="Username" type="text" />
         <Inputfield name="Password" type="password" />
