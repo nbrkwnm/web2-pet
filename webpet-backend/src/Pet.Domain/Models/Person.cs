@@ -9,7 +9,7 @@ namespace Pet.Domain.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public DateTime BirthDate { get; set; }
-        public IList<Document> Documents { get; set; }
+        public virtual IList<Document> Documents { get; set; }
 
         public Person()
         {

@@ -8,7 +8,7 @@ namespace Pet.Domain.Models
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public IList<PriceListItem> Items { get; set; }
+        public virtual IList<PriceListItem> Items { get; set; }
 
         public PriceList()
         {

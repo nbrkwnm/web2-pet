@@ -12,7 +12,7 @@ namespace Pet.Domain.Models
         public OrderStatusType Status { get; set; }
         public int PaymentId { get; set; }
         public virtual Payment Payment { get; set; }
-        public IList<OrderItem> Items { get; set; }
+        public virtual IList<OrderItem> Items { get; set; }
 
         public Order()
         {

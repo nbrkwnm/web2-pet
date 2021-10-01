@@ -9,7 +9,7 @@ namespace Pet.Domain.Models
         public bool IsOpen { get; set; }
         public int UserId { get; set; }
         public virtual User User { get; set; }
-        public IList<CashRegisterEvent> Events { get; set; }
+        public virtual IList<CashRegisterEvent> Events { get; set; }
 
         public CashRegister()
         {
