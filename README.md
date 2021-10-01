@@ -1,5 +1,10 @@
 Projeto final da disciplina de Programação em Ambiente WEB II
 
+Integrantes: FRANCISCO JOSE DAS NEVES NETO
+             MATHEUS CESAR FERNANDES NEVES
+             MURILO NOBORU HIRACAKA KAWANAMI
+             VITOR MANOEL DE ALMEIDA SILVA
+
 # Running Front-End application
 1. run yarn on project folder to install dependencies
 2. run yarn start
