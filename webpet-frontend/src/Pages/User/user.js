@@ -5,10 +5,12 @@ import API from '../../api/base';
 
 function User() {
   let form = {
-    name: '',
-    email: '',
-    birthDate: '',
-    documents: [''],
+    person: {
+      name: '',
+      email: '',
+      birthDate: '',
+      documents: [],
+    },
     username: '',
     password: '',
   };
@@ -16,10 +18,13 @@ function User() {
   async function handleOnSubmit(data) {
     if (typeof data !== 'undefined') {
       form = {
-        name: data.Name.value,
-        email: data.Email.value,
-        birthDate: data.Birthdate.value,
-        documents: [data.documento.value],
+
+        person: {
+          name: data.Name.value,
+          email: data.Email.value,
+          birthDate: data.Birthdate.value,
+          documents: [],
+        },
         username: data.Username.value,
         password: data.Password.value,
       };
@@ -38,7 +43,6 @@ function User() {
         <Inputfield name="Name" type="text" />
         <Inputfield name="Email" type="email" />
         <Inputfield name="Birthdate" type="date" />
-        <Inputfield name="documento" type="number" />
         <Inputfield name="Username" type="text" />
         <Inputfield name="Password" type="password" />
         <Submitfield name="Logar" />
