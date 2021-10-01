@@ -30,6 +30,14 @@ export default function Home() {
       nome: 'Licença',
       rota: 'license',
     },
+    {
+      nome: 'Serviços',
+      rota: 'services',
+    },
+    {
+      nome: 'Ver Serviços',
+      rota: 'services_list',
+    },
   ];
 
   function renderPages(page) {
