@@ -11,8 +11,12 @@ export default function Home() {
 
   const pages = [
     {
-      nome: 'Cliente',
+      nome: 'Cadastrar Cliente',
       rota: 'user',
+    },
+    {
+      nome: 'Ver Cliente',
+      rota: 'user_list',
     },
     {
       nome: 'Ambiente',
@@ -23,13 +27,18 @@ export default function Home() {
       rota: 'ambient_list',
     },
     {
-      nome: 'Linceça',
+      nome: 'Licença',
       rota: 'license',
     },
   ];
 
   function renderPages(page) {
-    return <Button onClick={() => routeChange(page.rota)}>{page.nome}</Button>;
+    return (
+      <>
+        <Button onClick={() => routeChange(page.rota)}>{page.nome}</Button>
+        <br />
+      </>
+    );
   }
 
   return (

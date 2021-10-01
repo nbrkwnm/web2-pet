@@ -30,7 +30,7 @@ function Ambient() {
         <h1 className="form-title">Cadastro de Ambiente</h1>
         <Inputfield name="Description" type="text" />
         <Inputfield name="Ocupado" type="checkbox" />
-        <Submitfield name="Confirmar" />
+        <Submitfield name="Cadastrar" />
       </form>
     </div>
   );

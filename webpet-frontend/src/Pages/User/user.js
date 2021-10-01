@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Inputfield from '../../Components/inputfield';
 import Submitfield from '../../Components/submitfield';
 import API from '../../api/base';
@@ -45,7 +45,7 @@ function User() {
         <Inputfield name="Birthdate" type="date" />
         <Inputfield name="Username" type="text" />
         <Inputfield name="Password" type="password" />
-        <Submitfield name="Logar" />
+        <Submitfield name="Cadastrar" />
       </form>
     </div>
   );
